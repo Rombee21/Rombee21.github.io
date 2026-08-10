@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rombee — Видеомонтаж Shorts, Reels & Горизонтальные</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- НАВИГАЦИЯ -->
+  <nav class="nav">
+    <div class="nav__logo">▶ <span>Rombee</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">Обо мне</a></li>
+      <li><a href="#services">Услуги</a></li>
+      <li><a href="#portfolio">Портфолио</a></li>
+      <li><a href="#contact">Контакт</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--small">Обсудить проект</a>
+    <button class="nav__burger" id="burger">☰</button>
+  </nav>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">✕</button>
+    <a href="#about" class="mobile-link">Обо мне</a>
+    <a href="#services" class="mobile-link">Услуги</a>
+    <a href="#portfolio" class="mobile-link">Портфолио</a>
+    <a href="#contact" class="mobile-link">Контакт</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <div class="hero__badge">🎬 Shorts · Reels · Горизонтальные видео</div>
+      <h1 class="hero__title">
+        Превращаю знания<br />
+        в <span class="gradient-text">вирусные видео</span>
+      </h1>
+      <p class="hero__subtitle">
+        Монтирую познавательные ролики для YouTube Shorts, Instagram Reels
+        и полноформатные горизонтальные видео. Динамично, цепляюще — с первых секунд.
+      </p>
+      <div class="hero__buttons">
+        <a href="#portfolio" class="btn btn--primary">Смотреть работы</a>
+        <a href="#contact" class="btn btn--outline">Написать мне</a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="phone-frame">
+        <div class="phone-screen phone-screen--video">
+          <video
+            id="heroVideo"
+            src="videos/hero.mp4"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+          <div class="video-hint" id="videoHint">
+            <span>▶</span>
+            <p>Наведи, чтобы<br/>воспроизвести</p>
+          </div>
+          <button class="sound-btn" id="soundBtn" title="Включить звук">🔇</button>
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- СТАТИСТИКА -->
+  <section class="stats">
+    <div class="stats__grid">
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="100">0</div>
+        <div class="stat-card__label">Смонтированных видео</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="7">0</div>
+        <div class="stat-card__label">YouTube-каналов</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="3">0</div>
+        <div class="stat-card__label">Года в продакшене</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="11">0</div>
+        <div class="stat-card__label">Работ в портфолио</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ОБО МНЕ -->
+  <section class="about" id="about">
+    <div class="section__tag">Обо мне</div>
+    <div class="about__grid">
+      <div class="about__image-wrap fade-in">
+        <div class="about__photo-placeholder">
+          <span>Фото Roman</span>
+        </div>
+        <div class="about__badge-float">🏆 Монтажёр Rombee</div>
+      </div>
+      <div class="about__text fade-in">
+        <h2 class="section__title">Создаю контент,<br />который <span class="gradient-text">задерживает</span></h2>
+        <p>
+          Привет, я <strong>Roman Shmelkov</strong>, монтажёр под псевдонимом <strong>Rombee</strong>.
+          Специализируюсь на коротких познавательных видео для YouTube Shorts и Instagram Reels —
+          знаю, как удержать зрителя с первой секунды и довести его до конца ролика.
+        </p>
+        <p>
+          Также монтирую горизонтальные форматы: подкасты, форумы, научпоп-ролики.
+          Работаю с образовательными каналами и экспертами, которые хотят доносить знания
+          в энергичном, современном стиле.
+        </p>
+        <ul class="about__list">
+          <li>✅ Срок согласовываем заранее — и я его держу</li>
+          <li>✅ Субтитры с анимацией</li>
+          <li>✅ Shorts, Reels и горизонтальные форматы</li>
+          <li>✅ Правки включены в стоимость</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- УСЛУГИ -->
+  <section class="services" id="services">
+    <div class="section__tag">Что я делаю</div>
+    <h2 class="section__title text-center">Мои <span class="gradient-text">услуги</span></h2>
+    <div class="services__grid">
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">📱</div>
+        <h3>Shorts & Reels</h3>
+        <p>Вертикальные познавательные ролики до 60 секунд. Динамичный темп, анимации, акценты.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🖥️</div>
+        <h3>Горизонтальные видео</h3>
+        <p>Форумы, подкасты, научпоп, обзоры. Полноформатный монтаж для YouTube-канала.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">💬</div>
+        <h3>Субтитры с анимацией</h3>
+        <p>Автоматическое распознавание + ручная правка. Ключевые слова — с акцентом и цветом.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🎨</div>
+        <h3>Графика и текст</h3>
+        <p>Анимированные заголовки, стрелки, подсказки, инфографика прямо в кадре.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🌈</div>
+        <h3>Цветокоррекция</h3>
+        <p>Выравниваю цвет, добавляю атмосферу. Видео выглядит профессионально.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">📦</div>
+        <h3>Пакетный монтаж</h3>
+        <p>Оптовые заказы от 5 видео — со скидкой. Идеально для регулярных выпусков.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ПОРТФОЛИО -->
+  <section class="portfolio" id="portfolio">
+    <div class="section__tag">Мои работы</div>
+    <h2 class="section__title text-center">Реальные <span class="gradient-text">работы</span></h2>
+
+    <div class="portfolio__tabs">
+      <button class="tab-btn active" data-filter="all">Все</button>
+      <button class="tab-btn" data-filter="shorts">Shorts / Reels</button>
+      <button class="tab-btn" data-filter="horizontal">Горизонтальные</button>
+      <button class="tab-btn" data-filter="special">Спецформаты</button>
+    </div>
+
+    <div class="portfolio__grid" id="portfolioGrid">
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/sleep_phone.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_sleep_phone.jpg" alt="Опасно ли спать рядом с телефоном" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Наука / Здоровье</span>
+          <p>Опасно ли спать рядом с телефоном?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/laundry.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_laundry.jpg" alt="Вредно ли сушить белье в квартире" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Быт / Наука</span>
+          <p>Вредно ли сушить бельё в квартире?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/belly.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_belly.jpg" alt="Откуда берётся вздутие в животе" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Здоровье</span>
+          <p>Откуда берётся вздутие в животе?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/mushroom_ram.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_mushroom_ram.jpg" alt="Грибы вместо ОЗУ" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Технологии</span>
+          <p>Грибы вместо ОЗУ — правда или миф?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/vasilisa.mp4">
+        <div class="portfolio-card__thumb portfolio-card__thumb--wide">
+          <img src="thumbnails/thumb_vasilisa.jpg" alt="Vasilisa" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--horizontal">Горизонтальное</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Интервью / Lifestyle</span>
+          <p>Василиса — горизонтальный монтаж</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/dasha.mp4">
+        <div class="portfolio-card__thumb portfolio-card__thumb--wide">
+          <img src="thumbnails/thumb_dasha.jpg" alt="Dasha" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--horizontal">Горизонтальное</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Интервью / Lifestyle</span>
+          <p>Даша — финальная версия</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/lenya.mp4">
+        <div class="portfolio-card__thumb portfolio-card__thumb--wide">
+          <img src="thumbnails/thumb_lenya.jpg" alt="Lenya Horizontal" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--horizontal">Горизонтальное</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Влог / Горизонтальное</span>
+          <p>Лёня — горизонтальный монтаж</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/forum_ai.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_forum_ai.jpg" alt="Форум ИИ и Кино" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Репортаж</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Событие / Репортаж</span>
+          <p>Форум ИИ и Кино</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="special" data-video="videos/rope.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_rope.jpg" alt="Rope Jumping" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--special">Экстрим</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Экстрим / Спорт</span>
+          <p>Rope Jumping — прыжок с высоты</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="special" data-video="videos/sidephone.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_sidephone.jpg" alt="Sidephone Finale" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--special">Sidephone</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Спецформат</span>
+          <p>Sidephone Finale — боковой экран</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="special" data-video="videos/trifold.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_trifold.jpg" alt="Трикладушка" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--special">Trifold</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Спецформат</span>
+          <p>Трикладушка — тройной экран</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- КАК МЫ РАБОТАЕМ -->
+  <section class="process">
+    <div class="section__tag">Процесс</div>
+    <h2 class="section__title text-center">Как это <span class="gradient-text">работает</span></h2>
+    <div class="process__steps">
+      <div class="process__step fade-in">
+        <div class="process__step-num">01</div>
+        <h3>Обсуждаем</h3>
+        <p>Ты пишешь мне, рассказываешь о канале и задаче.</p>
+      </div>
+      <div class="process__arrow">→</div>
+      <div class="process__step fade-in">
+        <div class="process__step-num">02</div>
+        <h3>Присылаешь материал</h3>
+        <p>Сырое видео, скрипт или идею — всё подойдёт.</p>
+      </div>
+      <div class="process__arrow">→</div>
+      <div class="process__step fade-in">
+        <div class="process__step-num">03</div>
+        <h3>Монтирую</h3>
+        <p>Согласовываем срок до старта — и я сдаю в него.</p>
+      </div>
+      <div class="process__arrow">→</div>
+      <div class="process__step fade-in">
+        <div class="process__step-num">04</div>
+        <h3>Сдаю готовое</h3>
+        <p>Присылаю видео, правки — бесплатно.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТ -->
+  <section class="contact" id="contact">
+    <div class="contact__inner fade-in">
+      <div class="section__tag">Связаться</div>
+      <h2 class="section__title text-center">Готов к <span class="gradient-text">новому проекту?</span></h2>
+      <p class="contact__sub">Напиши мне — отвечу в течение нескольких часов</p>
+
+      <form class="contact__form" id="contactForm">
+        <div class="form__row">
+          <input type="text" placeholder="Ваше имя" class="form__input" required />
+          <input type="email" placeholder="Email" class="form__input" required />
+        </div>
+        <input type="text" placeholder="Тема (например: монтаж 5 Shorts в неделю)" class="form__input" />
+        <textarea placeholder="Расскажите о вашем проекте..." class="form__textarea" rows="4"></textarea>
+        <button type="submit" class="btn btn--primary btn--full">Отправить заявку 🚀</button>
+      </form>
+
+      <div class="contact__socials">
+        <a href="https://t.me/romansh21" class="social-link" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:rombeeeeee@gmail.com" class="social-link">Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <p>© 2026 <strong>Roman Shmelkov</strong> aka <strong>Rombee</strong> — Видеомонтажёр Shorts, Reels & Горизонтальные</p>
+  </footer>
+
+  <!-- ЛАЙТБОКС -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">✕</button>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__content" id="lightboxContent">
+      <video
+        class="lightbox__video"
+        id="lightboxVideo"
+        controls
+        playsinline
+        preload="metadata"
+      ></video>
+      <div class="lightbox__meta">
+        <span class="lightbox__tag" id="lightboxTag"></span>
+        <p class="lightbox__title" id="lightboxTitle"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
