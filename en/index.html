@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rombee — Video Editor · Gaming &amp; Educational · Shorts &amp; Long-form</title>
+  <meta name="description" content="Sole editor for a four-channel EA FC network, 3 years. Gaming long-form, vertical shorts, clips and educational explainers. Available for EA FC 27." />
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- English version. Shares ../style.css, ../videos/ and ../thumbnails/ with the RU site. -->
+  <nav class="nav">
+    <div class="nav__logo">▶ <span>Rombee</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Work</a></li>
+      <li><a href="#channels">Channels</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="../">RU</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--small">Hire me</a>
+    <button class="nav__burger" id="burger">☰</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose">✕</button>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#portfolio" class="mobile-link">Work</a>
+    <a href="#channels" class="mobile-link">Channels</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+    <a href="../" class="mobile-link">Русская версия</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <div class="hero__badge">🎮 Gaming · 🔬 Explainers · Shorts &amp; long-form</div>
+      <h1 class="hero__title">
+        Three years, seven channels,<br />
+        <span class="gradient-text">one editor</span>
+      </h1>
+      <p class="hero__subtitle">
+        I'm the sole editor for a four-channel EA FC network and I cut science
+        and health explainers for a media company. Vertical shorts and long-form,
+        gaming and educational. Available now.
+      </p>
+      <div class="hero__buttons">
+        <a href="#portfolio" class="btn btn--primary">See the work</a>
+        <a href="#contact" class="btn btn--outline">Get a quote</a>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="phone-frame">
+        <div class="phone-screen phone-screen--video">
+          <video
+            id="heroVideo"
+            src="../videos/hero.mp4"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+          ></video>
+          <div class="video-hint" id="videoHint">
+            <span>▶</span>
+            <p>Hover to<br/>play</p>
+          </div>
+          <button class="sound-btn" id="soundBtn" title="Toggle sound">🔇</button>
+        </div>
+        <div class="phone-glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats__grid">
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="100" data-suffix="+">0</div>
+        <div class="stat-card__label">Videos edited</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="7" data-suffix="">0</div>
+        <div class="stat-card__label">YouTube channels</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="3" data-suffix="">0</div>
+        <div class="stat-card__label">Years in production</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-card__number" data-target="11" data-suffix="">0</div>
+        <div class="stat-card__label">Pieces in portfolio</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="section__tag">About</div>
+    <div class="about__grid">
+      <div class="about__image-wrap fade-in">
+        <div class="about__photo-placeholder">
+          <span>Roman</span>
+        </div>
+        <div class="about__badge-float">🎬 Rombee</div>
+      </div>
+      <div class="about__text fade-in">
+        <h2 class="section__title">I edit in two lanes —<br /><span class="gradient-text">and both are busy</span></h2>
+        <p>
+          I'm <strong>Roman</strong>, an editor working under the name <strong>Rombee</strong>.
+          For the past three years I've been the <strong>sole editor for a four-channel
+          EA FC / FIFA network</strong> — pack openings, trading, pitch notes, TOTY and
+          launch-season content, long-form and clips.
+        </p>
+        <p>
+          In parallel I cut <strong>science, health and beauty explainers</strong> for a
+          media company across three more channels — whiteboard-led educational shorts,
+          event coverage and interviews.
+        </p>
+        <ul class="about__list">
+          <li>✅ Long-form takes me 3 days — I quote 5 and deliver early</li>
+          <li>✅ Rough cut on day 2, so you see progress instead of taking my word</li>
+          <li>✅ Animated subtitles and on-screen graphics</li>
+          <li>✅ Revisions included</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section__tag">What I do</div>
+    <h2 class="section__title text-center">Services &amp; <span class="gradient-text">rates</span></h2>
+    <div class="services__grid">
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🎮</div>
+        <h3>Gaming long-form — $180</h3>
+        <p>EA FC / FIFA and similar. Pack openings, trading, reactions, pitch notes. Three years in this exact niche.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">📱</div>
+        <h3>Shorts &amp; Reels — $50</h3>
+        <p>Vertical, under 60 seconds. Fast pacing, animated captions, on-screen emphasis. Educational or gaming.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">✂️</div>
+        <h3>Clips from long-form — $35</h3>
+        <p>Turn your streams and long videos into vertical clips. This is most of what I do week to week.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🔬</div>
+        <h3>Explainer / educational</h3>
+        <p>Science, health, tech, beauty. Whiteboard-led or presenter-led, built to hold attention to the end.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">💬</div>
+        <h3>Animated subtitles</h3>
+        <p>Auto-transcribed, hand-corrected. Key words emphasised in colour and motion.</p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">📦</div>
+        <h3>Bulk &amp; retainer</h3>
+        <p>5+ videos or a weekly schedule — discounted. Best fit if you publish regularly.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section class="portfolio" id="portfolio">
+    <div class="section__tag">Selected work</div>
+    <h2 class="section__title text-center">Real <span class="gradient-text">deliverables</span></h2>
+
+    <div class="portfolio__tabs">
+      <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="shorts">Shorts / Reels</button>
+      <button class="tab-btn" data-filter="horizontal">Long-form</button>
+      <button class="tab-btn" data-filter="special">Special formats</button>
+    </div>
+
+    <div class="portfolio__grid" id="portfolioGrid">
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/sleep_phone.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_sleep_phone.jpg" alt="Is it dangerous to sleep next to your phone" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Science / Health</span>
+          <p>Is it dangerous to sleep next to your phone?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/laundry.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_laundry.jpg" alt="Is drying laundry indoors harmful" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Home / Science</span>
+          <p>Is drying laundry indoors bad for you?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/belly.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_belly.jpg" alt="What causes bloating" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Health</span>
+          <p>What actually causes bloating?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/mushroom_ram.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_mushroom_ram.jpg" alt="Mushrooms instead of RAM" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Shorts</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Technology</span>
+          <p>Mushrooms instead of RAM — myth or fact?</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/forum_ai.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_forum_ai.jpg" alt="AI and Cinema Forum" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Coverage</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Event / Coverage</span>
+          <p>AI &amp; Cinema Forum — event recap</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="special" data-video="../videos/rope.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_rope.jpg" alt="Rope jumping" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--special">Extreme</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Extreme / Sport</span>
+          <p>Rope jumping — height jump</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="special" data-video="../videos/sidephone.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_sidephone.jpg" alt="Sidephone" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--special">Sidephone</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Special format</span>
+          <p>Sidephone — side-screen concept</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="special" data-video="../videos/trifold.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_trifold.jpg" alt="Trifold" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--special">Trifold</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Special format</span>
+          <p>Trifold — triple-screen phone</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="../videos/vasilisa.mp4">
+        <div class="portfolio-card__thumb portfolio-card__thumb--wide">
+          <img src="../thumbnails/thumb_vasilisa.jpg" alt="Vasilisa" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--horizontal">Long-form</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Interview / Lifestyle</span>
+          <p>Vasilisa — long-form cut</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="../videos/dasha.mp4">
+        <div class="portfolio-card__thumb portfolio-card__thumb--wide">
+          <img src="../thumbnails/thumb_dasha.jpg" alt="Dasha" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--horizontal">Long-form</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Interview / Lifestyle</span>
+          <p>Dasha — final cut</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal" data-video="../videos/lenya.mp4">
+        <div class="portfolio-card__thumb portfolio-card__thumb--wide">
+          <img src="../thumbnails/thumb_lenya.jpg" alt="Lenya" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--horizontal">Long-form</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Vlog / Long-form</span>
+          <p>Lenya — long-form cut</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CHANNELS — public proof -->
+  <section class="services" id="channels">
+    <div class="section__tag">Proof</div>
+    <h2 class="section__title text-center">Channels I <span class="gradient-text">edit for</span></h2>
+    <p class="contact__sub" style="text-align:center;max-width:640px;margin:0 auto 2.5rem;">
+      Everything published on the four ESHA channels over the last 2–3 years was cut by me.
+    </p>
+    <div class="services__grid">
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🎮</div>
+        <h3>ESHA network — EA FC</h3>
+        <p>
+          Four channels, sole editor, 3 years.<br />
+          <a href="https://www.youtube.com/@EshAFIFA" target="_blank" rel="noopener">FC ESHA</a> ·
+          <a href="https://www.youtube.com/@ESHACLIPS" target="_blank" rel="noopener">ESHA CLIPS</a><br />
+          <a href="https://www.youtube.com/@ESHATRADE" target="_blank" rel="noopener">ESHA TRADE</a> ·
+          <a href="https://www.youtube.com/@ESHACheck" target="_blank" rel="noopener">ESHA Check</a>
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">🔬</div>
+        <h3>Educational &amp; tech</h3>
+        <p>
+          Science, health and gadget explainers.<br />
+          <a href="https://www.youtube.com/@chudotex" target="_blank" rel="noopener">чудотех</a> ·
+          <a href="https://www.youtube.com/@Tostr_ru" target="_blank" rel="noopener">Tostr</a> ·
+          <a href="https://www.youtube.com/@sergeymalozemov" target="_blank" rel="noopener">Sergey Malozyomov</a>
+        </p>
+      </div>
+
+      <div class="service-card fade-in">
+        <div class="service-card__icon">📅</div>
+        <h3>Available for EA FC 27</h3>
+        <p>
+          Launch is 25 September. I've worked three EA FC seasons including TOTY —
+          I know the content calendar and the turnaround it demands.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <div class="section__tag">Process</div>
+    <h2 class="section__title text-center">How it <span class="gradient-text">works</span></h2>
+    <div class="process__steps">
+      <div class="process__step fade-in">
+        <div class="process__step-num">01</div>
+        <h3>You message me</h3>
+        <p>Tell me the channel, the format and the volume.</p>
+      </div>
+      <div class="process__arrow">→</div>
+      <div class="process__step fade-in">
+        <div class="process__step-num">02</div>
+        <h3>We agree a start date</h3>
+        <p>Not just a delivery date — you'll know exactly when I begin.</p>
+      </div>
+      <div class="process__arrow">→</div>
+      <div class="process__step fade-in">
+        <div class="process__step-num">03</div>
+        <h3>Rough cut on day 2</h3>
+        <p>You see real progress mid-project, and get notes in early.</p>
+      </div>
+      <div class="process__arrow">→</div>
+      <div class="process__step fade-in">
+        <div class="process__step-num">04</div>
+        <h3>Final delivery</h3>
+        <p>Ahead of the quoted deadline. Revisions included.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__inner fade-in">
+      <div class="section__tag">Get in touch</div>
+      <h2 class="section__title text-center">Need an editor for <span class="gradient-text">EA FC 27?</span></h2>
+      <p class="contact__sub">Fastest reply is on Telegram — usually within a few hours</p>
+
+      <div class="hero__buttons" style="justify-content:center;margin-bottom:2.5rem;">
+        <a href="https://t.me/romansh21" target="_blank" rel="noopener" class="btn btn--primary">Message me on Telegram</a>
+        <a href="mailto:rombeeeeee@gmail.com" class="btn btn--outline">Email me</a>
+      </div>
+
+      <form class="contact__form" id="contactForm">
+        <div class="form__row">
+          <input type="text" placeholder="Your name" class="form__input" required />
+          <input type="email" placeholder="Email" class="form__input" required />
+        </div>
+        <input type="text" placeholder="Subject (e.g. 5 shorts per week for a gaming channel)" class="form__input" />
+        <textarea placeholder="Tell me about your channel and what you need..." class="form__textarea" rows="4"></textarea>
+        <button type="submit" class="btn btn--primary btn--full">Send enquiry 🚀</button>
+      </form>
+
+      <div class="contact__socials">
+        <a href="https://t.me/romansh21" class="social-link" target="_blank" rel="noopener">Telegram</a>
+        <a href="mailto:rombeeeeee@gmail.com" class="social-link">Email</a>
+        <a href="../" class="social-link">Русская версия</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 <strong>Roman</strong> aka <strong>Rombee</strong> — video editor · gaming &amp; educational · shorts &amp; long-form</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" id="lightboxClose">✕</button>
+    <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox__content" id="lightboxContent">
+      <video class="lightbox__video" id="lightboxVideo" controls playsinline preload="metadata"></video>
+      <div class="lightbox__meta">
+        <span class="lightbox__tag" id="lightboxTag"></span>
+        <p class="lightbox__title" id="lightboxTitle"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

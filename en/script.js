@@ -1,4 +1,6 @@
-// ===== HERO ВИДЕО — hover играет, click паузит, кнопка звука =====
+// English version of the site logic. Mirrors ../script.js with English strings.
+
+// ===== HERO VIDEO — hover plays, click pauses, sound toggle =====
 const heroVideo  = document.getElementById('heroVideo');
 const videoHint  = document.getElementById('videoHint');
 const soundBtn   = document.getElementById('soundBtn');
@@ -13,7 +15,7 @@ if (phoneFrame && heroVideo) {
   });
 
   phoneFrame.addEventListener('click', (e) => {
-    if (e.target === soundBtn) return; // обрабатывается ниже
+    if (e.target === soundBtn) return;
     if (!heroVideo.paused) {
       heroVideo.pause();
       videoHint.classList.remove('hidden');
@@ -30,7 +32,7 @@ if (phoneFrame && heroVideo) {
   });
 }
 
-// ===== ЛАЙТБОКС — открывает видео =====
+// ===== LIGHTBOX =====
 const lightbox         = document.getElementById('lightbox');
 const lightboxVideo    = document.getElementById('lightboxVideo');
 const lightboxTag      = document.getElementById('lightboxTag');
@@ -44,9 +46,9 @@ document.querySelectorAll('.portfolio-card').forEach(card => {
     const tag      = card.querySelector('.portfolio-card__tag');
     const title    = card.querySelector('.portfolio-card__info p');
 
-    lightboxVideo.src             = videoSrc || '';
-    lightboxTag.textContent       = tag   ? tag.textContent   : '';
-    lightboxTitle.textContent     = title ? title.textContent : '';
+    lightboxVideo.src         = videoSrc || '';
+    lightboxTag.textContent   = tag   ? tag.textContent   : '';
+    lightboxTitle.textContent = title ? title.textContent : '';
 
     lightboxVideo.load();
     lightbox.classList.add('open');
@@ -65,8 +67,8 @@ lightboxClose.addEventListener('click', closeLightbox);
 lightboxBackdrop.addEventListener('click', closeLightbox);
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
 
-// ===== ТАБЫ ПОРТФОЛИО =====
-const tabBtns       = document.querySelectorAll('.tab-btn');
+// ===== PORTFOLIO TABS =====
+const tabBtns        = document.querySelectorAll('.tab-btn');
 const portfolioCards = document.querySelectorAll('.portfolio-card');
 
 tabBtns.forEach(btn => {
@@ -84,7 +86,7 @@ tabBtns.forEach(btn => {
   });
 });
 
-// ===== АНИМАЦИЯ ПОЯВЛЕНИЯ БЛОКОВ =====
+// ===== FADE-IN ON SCROLL =====
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
@@ -94,7 +96,7 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-// ===== СЧЁТЧИКИ СТАТИСТИКИ =====
+// ===== STAT COUNTERS =====
 const counters = document.querySelectorAll('.stat-card__number');
 const counterObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -108,7 +110,7 @@ counters.forEach(counter => counterObserver.observe(counter));
 
 function animateCounter(el) {
   const target   = parseInt(el.dataset.target, 10);
-  // Точные цифры (7 каналов, 3 года, 11 работ) не должны выводиться как "7+".
+  // Exact figures (7 channels, 3 years, 11 pieces) must not render as "7+".
   const suffix   = el.dataset.suffix !== undefined ? el.dataset.suffix : '+';
   const duration = 1800;
   const step     = target / (duration / 16);
@@ -124,15 +126,12 @@ function animateCounter(el) {
   }, 16);
 }
 
-// ===== КОНТАКТЫ =====
-// ВАЖНО: подставь свои реальные контакты. Пока здесь заглушки — форма
-// не должна показывать "отправлено", если письмо никуда не уходит.
+// ===== CONTACTS =====
 const CONTACT_EMAIL    = 'rombeeeeee@gmail.com';
 const CONTACT_TELEGRAM = 'romansh21';
 
-// ===== ФОРМА =====
-// Раньше форма показывала "✅ Заявка отправлена!" и молча выбрасывала письмо.
-// Теперь она реально открывает почтовый клиент с заполненным письмом.
+// ===== FORM =====
+// Opens a prefilled email rather than pretending the message was sent.
 const form = document.getElementById('contactForm');
 form.addEventListener('submit', (e) => {
   e.preventDefault();
@@ -143,15 +142,10 @@ form.addEventListener('submit', (e) => {
 
   const name  = (nameEl?.value  || '').trim();
   const email = (emailEl?.value || '').trim();
-  const subj  = (subjEl?.value  || '').trim() || 'Заявка на монтаж';
+  const subj  = (subjEl?.value  || '').trim() || 'Editing enquiry';
   const msg   = (msgEl?.value   || '').trim();
 
-  const body = [
-    `Имя: ${name}`,
-    `Email: ${email}`,
-    '',
-    msg
-  ].join('\n');
+  const body = [`Name: ${name}`, `Email: ${email}`, '', msg].join('\n');
 
   const href = `mailto:${CONTACT_EMAIL}`
     + `?subject=${encodeURIComponent(subj)}`
@@ -159,7 +153,7 @@ form.addEventListener('submit', (e) => {
 
   const btn = form.querySelector('button[type="submit"]');
   const original = btn.textContent;
-  btn.textContent = '📧 Открываю почту…';
+  btn.textContent = '📧 Opening your email…';
   btn.disabled = true;
 
   window.location.href = href;
@@ -170,7 +164,7 @@ form.addEventListener('submit', (e) => {
   }, 2500);
 });
 
-// ===== МОБИЛЬНОЕ МЕНЮ =====
+// ===== MOBILE MENU =====
 const burger     = document.getElementById('burger');
 const mobileMenu = document.getElementById('mobileMenu');
 const menuClose  = document.getElementById('menuClose');
@@ -180,7 +174,7 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => mobileMenu.classList.remove('open'));
 });
 
-// ===== ПОДСВЕТКА МЕНЮ =====
+// ===== NAV HIGHLIGHT =====
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.nav__links a');
 window.addEventListener('scroll', () => {
