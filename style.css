@@ -353,6 +353,14 @@ img { max-width: 100%; }
   color: var(--text-muted);
   font-size: 0.9rem;
 }
+.about__photo {
+  width: 100%;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  display: block;
+}
 .about__badge-float {
   position: absolute;
   bottom: -16px;
@@ -763,6 +771,7 @@ img { max-width: 100%; }
 
   .about__grid { grid-template-columns: 1fr; gap: 3rem; }
   .about__photo-placeholder { aspect-ratio: 1; max-width: 300px; margin: 0 auto; }
+  .about__photo { aspect-ratio: 1; max-width: 300px; margin: 0 auto; }
 
   .services__grid { grid-template-columns: 1fr; }
   .portfolio__grid { grid-template-columns: repeat(2, 1fr); }
