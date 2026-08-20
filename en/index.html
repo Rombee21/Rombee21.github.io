@@ -121,7 +121,7 @@
           event coverage and interviews.
         </p>
         <ul class="about__list">
-          <li>✅ Long-form takes me 3 days — I quote 5 and deliver early</li>
+          <li>✅ First draft of a standard short-form edit within 48 hours</li>
           <li>✅ Rough cut on day 2, so you see progress instead of taking my word</li>
           <li>✅ Animated subtitles and on-screen graphics</li>
           <li>✅ Revisions included</li>
@@ -182,14 +182,40 @@
 
     <div class="portfolio__tabs">
       <button class="tab-btn active" data-filter="all">All</button>
+      <button class="tab-btn" data-filter="talking-head">Talking Head</button>
       <button class="tab-btn" data-filter="shorts">Shorts / Reels</button>
+      <button class="tab-btn" data-filter="gaming">Gaming</button>
       <button class="tab-btn" data-filter="horizontal">Long-form</button>
       <button class="tab-btn" data-filter="special">Special formats</button>
     </div>
 
     <div class="portfolio__grid" id="portfolioGrid">
 
-      <div class="portfolio-card fade-in" data-type="horizontal" data-video="../videos/eafc_tutorial.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts gaming talking-head" data-video="../videos/eafc_weekend_league.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_eafc_weekend_league.jpg" alt="EA FC Weekend League gaming Short" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Gaming Short</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Gaming / EA FC</span>
+          <p>Weekend League — fast-paced EA FC Short</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts gaming talking-head" data-video="../videos/eafc_graphics_evolution.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="../thumbnails/thumb_eafc_graphics_evolution.jpg" alt="Evolution of FIFA and EA FC graphics" />
+          <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
+          <span class="card-format card-format--vertical">Gaming Short</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Gaming / EA FC</span>
+          <p>The evolution of FIFA and EA FC graphics</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal gaming talking-head" data-video="../videos/eafc_tutorial.mp4">
         <div class="portfolio-card__thumb portfolio-card__thumb--wide">
           <img src="../thumbnails/thumb_eafc_tutorial.jpg" alt="EA FC 26 defending tutorial" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
@@ -201,7 +227,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/sleep_phone.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="../videos/sleep_phone.mp4">
         <div class="portfolio-card__thumb">
           <img src="../thumbnails/thumb_sleep_phone.jpg" alt="Is it dangerous to sleep next to your phone" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
@@ -213,7 +239,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/laundry.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="../videos/laundry.mp4">
         <div class="portfolio-card__thumb">
           <img src="../thumbnails/thumb_laundry.jpg" alt="Is drying laundry indoors harmful" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
@@ -225,7 +251,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/belly.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="../videos/belly.mp4">
         <div class="portfolio-card__thumb">
           <img src="../thumbnails/thumb_belly.jpg" alt="What causes bloating" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
@@ -237,7 +263,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="../videos/mushroom_ram.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="../videos/mushroom_ram.mp4">
         <div class="portfolio-card__thumb">
           <img src="../thumbnails/thumb_mushroom_ram.jpg" alt="Mushrooms instead of RAM" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
@@ -297,7 +323,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="horizontal" data-video="../videos/vasilisa.mp4">
+      <div class="portfolio-card fade-in" data-type="horizontal talking-head" data-video="../videos/vasilisa.mp4">
         <div class="portfolio-card__thumb portfolio-card__thumb--wide">
           <img src="../thumbnails/thumb_vasilisa.jpg" alt="Vasilisa" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>
@@ -309,7 +335,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="horizontal" data-video="../videos/dasha.mp4">
+      <div class="portfolio-card fade-in" data-type="horizontal talking-head" data-video="../videos/dasha.mp4">
         <div class="portfolio-card__thumb portfolio-card__thumb--wide">
           <img src="../thumbnails/thumb_dasha.jpg" alt="Dasha" />
           <div class="portfolio-card__overlay"><span class="overlay-play">▶</span></div>

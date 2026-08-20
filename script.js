@@ -75,7 +75,8 @@ tabBtns.forEach(btn => {
     btn.classList.add('active');
     const filter = btn.dataset.filter;
     portfolioCards.forEach(card => {
-      if (filter === 'all' || card.dataset.type === filter) {
+      const types = card.dataset.type.split(/\s+/);
+      if (filter === 'all' || types.includes(filter)) {
         card.classList.remove('hidden');
       } else {
         card.classList.add('hidden');

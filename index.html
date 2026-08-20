@@ -117,7 +117,7 @@
           в энергичном, современном стиле.
         </p>
         <ul class="about__list">
-          <li>✅ Срок согласовываем заранее — и я его держу</li>
+          <li>✅ Первый черновик стандартного короткого ролика — в течение 48 часов</li>
           <li>✅ Субтитры с анимацией</li>
           <li>✅ Shorts, Reels и горизонтальные форматы</li>
           <li>✅ Правки включены в стоимость</li>
@@ -157,9 +157,9 @@
       </div>
 
       <div class="service-card fade-in">
-        <div class="service-card__icon">🌈</div>
-        <h3>Цветокоррекция</h3>
-        <p>Выравниваю цвет, добавляю атмосферу. Видео выглядит профессионально.</p>
+        <div class="service-card__icon">🎙️</div>
+        <h3>Talking-head монтаж</h3>
+        <p>Чистая нарезка речи, динамика, B-roll, субтитры и экранные акценты для экспертов и ведущих.</p>
       </div>
 
       <div class="service-card fade-in">
@@ -178,14 +178,44 @@
 
     <div class="portfolio__tabs">
       <button class="tab-btn active" data-filter="all">Все</button>
+      <button class="tab-btn" data-filter="talking-head">Talking Head</button>
       <button class="tab-btn" data-filter="shorts">Shorts / Reels</button>
+      <button class="tab-btn" data-filter="gaming">Гейминг</button>
       <button class="tab-btn" data-filter="horizontal">Горизонтальные</button>
       <button class="tab-btn" data-filter="special">Спецформаты</button>
     </div>
 
     <div class="portfolio__grid" id="portfolioGrid">
 
-      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/eafc_tutorial.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts gaming talking-head" data-video="videos/eafc_weekend_league.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_eafc_weekend_league.jpg" alt="Weekend League в EA FC" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Gaming Short</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Гейминг / EA FC</span>
+          <p>Weekend League — динамичный EA FC Short</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="shorts gaming talking-head" data-video="videos/eafc_graphics_evolution.mp4">
+        <div class="portfolio-card__thumb">
+          <img src="thumbnails/thumb_eafc_graphics_evolution.jpg" alt="Эволюция графики FIFA и EA FC" />
+          <div class="portfolio-card__overlay">
+            <span class="overlay-play">▶</span>
+          </div>
+          <span class="card-format card-format--vertical">Gaming Short</span>
+        </div>
+        <div class="portfolio-card__info">
+          <span class="portfolio-card__tag">Гейминг / EA FC</span>
+          <p>Эволюция графики FIFA и EA FC</p>
+        </div>
+      </div>
+
+      <div class="portfolio-card fade-in" data-type="horizontal gaming talking-head" data-video="videos/eafc_tutorial.mp4">
         <div class="portfolio-card__thumb portfolio-card__thumb--wide">
           <img src="thumbnails/thumb_eafc_tutorial.jpg" alt="Туториал по защите EA FC 26" />
           <div class="portfolio-card__overlay">
@@ -199,7 +229,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/sleep_phone.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="videos/sleep_phone.mp4">
         <div class="portfolio-card__thumb">
           <img src="thumbnails/thumb_sleep_phone.jpg" alt="Опасно ли спать рядом с телефоном" />
           <div class="portfolio-card__overlay">
@@ -213,7 +243,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/laundry.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="videos/laundry.mp4">
         <div class="portfolio-card__thumb">
           <img src="thumbnails/thumb_laundry.jpg" alt="Вредно ли сушить белье в квартире" />
           <div class="portfolio-card__overlay">
@@ -227,7 +257,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/belly.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="videos/belly.mp4">
         <div class="portfolio-card__thumb">
           <img src="thumbnails/thumb_belly.jpg" alt="Откуда берётся вздутие в животе" />
           <div class="portfolio-card__overlay">
@@ -241,7 +271,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="shorts" data-video="videos/mushroom_ram.mp4">
+      <div class="portfolio-card fade-in" data-type="shorts talking-head" data-video="videos/mushroom_ram.mp4">
         <div class="portfolio-card__thumb">
           <img src="thumbnails/thumb_mushroom_ram.jpg" alt="Грибы вместо ОЗУ" />
           <div class="portfolio-card__overlay">
@@ -255,7 +285,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/vasilisa.mp4">
+      <div class="portfolio-card fade-in" data-type="horizontal talking-head" data-video="videos/vasilisa.mp4">
         <div class="portfolio-card__thumb portfolio-card__thumb--wide">
           <img src="thumbnails/thumb_vasilisa.jpg" alt="Vasilisa" />
           <div class="portfolio-card__overlay">
@@ -269,7 +299,7 @@
         </div>
       </div>
 
-      <div class="portfolio-card fade-in" data-type="horizontal" data-video="videos/dasha.mp4">
+      <div class="portfolio-card fade-in" data-type="horizontal talking-head" data-video="videos/dasha.mp4">
         <div class="portfolio-card__thumb portfolio-card__thumb--wide">
           <img src="thumbnails/thumb_dasha.jpg" alt="Dasha" />
           <div class="portfolio-card__overlay">
