@@ -53,19 +53,20 @@
     </div>
 
     <div class="hero__visual">
-      <div class="phone-frame">
-        <div class="phone-screen phone-screen--video">
+      <div class="intro-frame">
+        <div class="intro-screen">
           <video
             id="heroVideo"
-            src="videos/hero.mp4"
+            src="videos/intro.mp4"
+            poster="thumbnails/intro_poster.jpg"
             muted
-            loop
+            autoplay
             playsinline
-            preload="metadata"
+            preload="auto"
           ></video>
-          <div class="video-hint" id="videoHint">
-            <span>▶</span>
-            <p>Наведи, чтобы<br/>воспроизвести</p>
+          <div class="video-hint hidden" id="videoHint">
+            <span>↻</span>
+            <p>Смотреть<br/>ещё раз</p>
           </div>
           <button class="sound-btn" id="soundBtn" title="Включить звук">🔇</button>
         </div>

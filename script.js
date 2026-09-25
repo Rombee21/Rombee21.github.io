@@ -2,24 +2,23 @@
 const heroVideo  = document.getElementById('heroVideo');
 const videoHint  = document.getElementById('videoHint');
 const soundBtn   = document.getElementById('soundBtn');
-const phoneFrame = heroVideo ? heroVideo.closest('.phone-frame') : null;
+const introFrame = heroVideo ? heroVideo.closest('.intro-frame') : null;
 
-if (phoneFrame && heroVideo) {
-  phoneFrame.addEventListener('mouseenter', () => {
-    if (heroVideo.paused) {
+if (introFrame && heroVideo) {
+  // интро играет само (без звука), в конце стоит на логотипе
+  const tryPlay = () => { const p = heroVideo.play(); if (p) p.catch(() => videoHint.classList.remove('hidden')); };
+  tryPlay();
+
+  heroVideo.addEventListener('play',  () => videoHint.classList.add('hidden'));
+
+  introFrame.addEventListener('click', (e) => {
+    if (e.target === soundBtn) return;
+    if (heroVideo.paused || heroVideo.ended) {
+      if (heroVideo.ended) heroVideo.currentTime = 0;
       heroVideo.play();
-      videoHint.classList.add('hidden');
-    }
-  });
-
-  phoneFrame.addEventListener('click', (e) => {
-    if (e.target === soundBtn) return; // обрабатывается ниже
-    if (!heroVideo.paused) {
+    } else {
       heroVideo.pause();
       videoHint.classList.remove('hidden');
-    } else {
-      heroVideo.play();
-      videoHint.classList.add('hidden');
     }
   });
 
@@ -27,6 +26,8 @@ if (phoneFrame && heroVideo) {
     e.stopPropagation();
     heroVideo.muted = !heroVideo.muted;
     soundBtn.textContent = heroVideo.muted ? '🔇' : '🔊';
+    // включили звук — показать интро сначала со звуком
+    if (!heroVideo.muted) { heroVideo.currentTime = 0; heroVideo.play(); }
   });
 }
 
